@@ -92,6 +92,8 @@ function Signup() {
             console.log('password not match ');
             return;
         }
+
+        
         if (emailError) {
 
             return;
