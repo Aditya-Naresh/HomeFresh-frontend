@@ -107,6 +107,10 @@ function Nav() {
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Typography textAlign="center">Contact us</Typography>
                             </MenuItem>
+
+                            <MenuItem onClick={()=>navigate('/otp')}>
+                                <Typography textAlign="center">Otp</Typography>
+                            </MenuItem>
                         </Menu>
                     </Box>
 
@@ -116,7 +120,7 @@ function Nav() {
 
                         <Button
 
-                            onClick={handleCloseNavMenu}
+                            onClick={()=>navigate('/products')}
                             sx={{ my: 2, color: 'white', display: 'block',  marginLeft: '50px' }}
                         >
                             Products
@@ -131,10 +135,10 @@ function Nav() {
                         </Button>
                         <Button
 
-                            onClick={handleCloseNavMenu}
+                            onClick={()=>navigate('/otp')}
                             sx={{ my: 2, color: 'white', display: 'block' , marginLeft: '40px' }}
                         >
-                            Contact us
+                            otp
                         </Button>
 
                     </Box>
